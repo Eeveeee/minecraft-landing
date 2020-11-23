@@ -1,0 +1,47 @@
+.header {
+  background: url(../img/header/background.png) center no-repeat;
+  background-size: cover;
+  .container {
+    @include flex();
+    position: relative;
+  }
+  .logo-wrapper {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    align-self: flex-start;
+    @include wh(320px, 63px);
+  }
+  &-wrapper {
+    @include flex($wrap: wrap);
+    padding: 30px 0;
+  }
+  &-nav {
+    width: 540px;
+    font-size: 19px;
+    @include flex($justify: space-between, $wrap: wrap);
+    &__item,
+    &__item:hover {
+      font-weight: 600;
+      color: $text-nav;
+    }
+    &__item {
+      position: relative;
+      &::after {
+        transition: 0.2s;
+        content: "";
+        background: transparent;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px;
+        width: 100%;
+      }
+      &:hover {
+        &::after {
+          background: $text-nav;
+        }
+      }
+    }
+  }
+}

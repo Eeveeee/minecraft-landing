@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: $text-white;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

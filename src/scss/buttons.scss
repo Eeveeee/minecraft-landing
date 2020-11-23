@@ -1,0 +1,25 @@
+.button {
+  border: none;
+  &-msetup {
+    background: $main-green;
+    @include wh(562px, 100px);
+    @include flex();
+    &__img {
+      margin-right: 36px;
+    }
+    &__text {
+      @include flex($direction: column);
+      color: $text-white;
+      font-size: 32px;
+      font-weight: bold;
+      div {
+        margin-bottom: 12px;
+        &:last-child {
+          font-weight: 300;
+          font-size: 22px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

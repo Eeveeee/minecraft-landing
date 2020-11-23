@@ -1,0 +1,52 @@
+.main {
+  background: url(../img/main/background.png) center no-repeat;
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+  padding: 570px 0 50px 0;
+  .container {
+    &:before {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1300px;
+      height: 354px;
+      left: 50%;
+      margin-left: -650px;
+      background: rgba(255, 255, 255, 0.82);
+      filter: blur(93px);
+      opacity: 0.8;
+      z-index: 1000;
+    }
+  }
+  &-wrapper {
+    @include flex($direction: column);
+    z-index: 1000;
+    position: relative;
+  }
+  &-buttons {
+    width: 1252px;
+    @include flex($justify: space-between);
+    margin-bottom: 56px;
+  }
+  &-roller {
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    @include flex();
+    background: rgba(white, 50%);
+    box-shadow: 4px 7px 12px 3px rgba(0, 0, 0, 0.25);
+    padding: 19px 42px 19px 28px;
+    width: 351px;
+    &__img {
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    &__text {
+      color: $text-blue;
+    }
+  }
+}
