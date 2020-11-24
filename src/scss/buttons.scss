@@ -1,6 +1,9 @@
 .button {
   border: none;
   &-msetup {
+    @media (max-width: 768px) {
+      display: none;
+    }
     background: $main-green;
     @include wh(562px, 100px);
     @include flex();

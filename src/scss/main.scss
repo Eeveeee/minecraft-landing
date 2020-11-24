@@ -18,7 +18,7 @@
       filter: blur(93px);
       opacity: 0.8;
       z-index: 1000;
-      @media (max-width: 1310px) {
+      @media (max-width: 1350px) {
         width: 100%;
         margin-left: 0;
         left: 0;
@@ -34,7 +34,7 @@
     width: 1252px;
     @include flex($justify: space-between, $wrap: wrap);
     margin-bottom: 56px;
-    @media (max-width: 1310px) {
+    @media (max-width: 1350px) {
       width: 600px;
       justify-content: center;
       a {

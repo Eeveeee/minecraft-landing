@@ -1,0 +1,76 @@
+.compare {
+  padding: 94px 0 152px 0;
+  &__header {
+    margin-bottom: 82px;
+    @media (max-width: 1350px) {
+      margin: 20px auto;
+    }
+  }
+  &-content {
+    @include flex($justify: space-between, $align: start, $wrap: wrap);
+    @media (max-width: 1350px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-version {
+    width: 608px;
+  }
+  .border-wrapper {
+    padding-top: 41px;
+    border: 1px solid $main-green;
+
+    height: 660px;
+  }
+  .button-msetup {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  &-versus {
+    margin-top: 330px;
+    color: $main-green;
+    font-size: 85px;
+    font-weight: 700;
+    @media (max-width: 1350px) {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+  .version {
+    @media (max-width: 1350px) {
+      margin-bottom: 15px;
+    }
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    &-info-items {
+      padding: 0 20px 0 93px;
+      @media (max-width: 1000px) {
+        padding-left: 20px;
+      }
+    }
+    &-info__item {
+      font-weight: 400;
+      margin-bottom: 49px;
+      position: relative;
+      line-height: 29px;
+      &::marker {
+        content: "";
+      }
+      &:before {
+        position: absolute;
+        top: 5hpx;
+        content: "";
+        left: -49px;
+        @include wh(20px, 20px);
+        background: $main-green;
+      }
+      &:last-child {
+        margin-bottom: 85px;
+      }
+    }
+  }
+}

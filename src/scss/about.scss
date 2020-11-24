@@ -5,25 +5,18 @@
   background-size: cover;
   &-wrapper {
     @include flex($justify: flex-start);
+    @media (max-width: 1570px) {
+      justify-content: center;
+    }
   }
   &-text {
     @include flex($direction: column, $justify: flex-start, $align: unset);
     width: 888px;
-    &__title {
-      color: $main-green;
-      position: relative;
-      width: fit-content;
-      &:after {
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        height: 28px;
-        width: 100%;
-        content: "";
-        background: rgba(255, 214, 0, 0.3);
-      }
+    @media (max-width: 1570px) {
+      align-items: center;
     }
     &__description {
+      margin: 0 auto;
       font-size: 25px;
       span {
         display: block;

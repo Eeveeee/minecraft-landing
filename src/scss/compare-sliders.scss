@@ -1,0 +1,50 @@
+.compare {
+  .compare-slider_1-wrapper,
+  .compare-slider_2-wrapper {
+    position: relative;
+  }
+  .compare-slider_1-controls,
+  .compare-slider_2-controls {
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include flex($justify: space-between);
+    width: 100%;
+  }
+  .prev,
+  .next {
+    transition: 0.3s;
+    opacity: 0;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    background: rgba(black, 30%);
+    @include wh(80px, 342px);
+    @include flex();
+    svg {
+      @include wh(47px, 47px);
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .tns-nav {
+    @include flex();
+    margin-top: 10px;
+    button {
+      outline: none;
+      user-select: none;
+      @include wh(20px, 5px);
+      border: none;
+      background: rgba(#34aa2f, 20%);
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.tns-nav-active {
+        background: $main-green;
+      }
+    }
+  }
+}

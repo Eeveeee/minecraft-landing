@@ -16,10 +16,27 @@ body {
   color: $text-gray;
 }
 h2 {
+  position: relative;
   font-weight: 700;
   font-size: 35px;
+  z-index: 1;
+  color: $main-green;
+  width: fit-content;
+  &:after {
+    z-index: -100;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 28px;
+    width: 100%;
+    content: "";
+    background: rgba(255, 214, 0, 0.3);
+  }
 }
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  @media (max-width: 1440px) {
+    padding: 10px;
+  }
 }
