@@ -18,6 +18,11 @@
       filter: blur(93px);
       opacity: 0.8;
       z-index: 1000;
+      @media (max-width: 1310px) {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+      }
     }
   }
   &-wrapper {
@@ -27,8 +32,21 @@
   }
   &-buttons {
     width: 1252px;
-    @include flex($justify: space-between);
+    @include flex($justify: space-between, $wrap: wrap);
     margin-bottom: 56px;
+    @media (max-width: 1310px) {
+      width: 600px;
+      justify-content: center;
+      a {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   &-roller {
     position: relative;
@@ -47,6 +65,10 @@
     }
     &__text {
       color: $text-blue;
+    }
+    @media (max-width: 365px) {
+      width: auto;
+      padding: 19px 42px 19px 2px;
     }
   }
 }

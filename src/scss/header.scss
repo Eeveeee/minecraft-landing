@@ -4,13 +4,19 @@
   .container {
     @include flex();
     position: relative;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
   .logo-wrapper {
     position: absolute;
     left: 0;
     top: 9px;
-    align-self: flex-start;
     @include wh(320px, 63px);
+    @media (max-width: 1200px) {
+      align-self: center;
+      position: unset;
+    }
   }
   &-wrapper {
     @include flex($wrap: wrap);
@@ -42,6 +48,9 @@
           background: $text-nav;
         }
       }
+    }
+    @media (max-width: 570px) {
+      width: 300px;
     }
   }
 }
