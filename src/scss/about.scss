@@ -1,7 +1,7 @@
 .about {
   position: relative;
   padding: 169px 0 387px 0;
-  background: url(../img/about/background.png) center no-repeat;
+  background: url(../img/about/background.webp) center no-repeat;
   background-size: cover;
   &-wrapper {
     @include flex($justify: flex-start);
