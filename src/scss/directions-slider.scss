@@ -1,10 +1,8 @@
-.compare {
-  .compare-slider_1-wrapper,
-  .compare-slider_2-wrapper {
+.directions {
+  .directions-slider-wrapper {
     position: relative;
   }
-  .compare-slider_1-controls,
-  .compare-slider_2-controls {
+  .directions-slider-controls {
     user-select: none;
     position: absolute;
     left: 0;
@@ -12,34 +10,47 @@
     @include flex($justify: space-between);
     width: 100%;
   }
+
   .prev,
   .next {
     transition: 0.3s;
-    opacity: 0;
     user-select: none;
     outline: none;
     cursor: pointer;
-    background: rgba(black, 30%);
-    @include wh(80px, 342px);
+    background: rgba($another-green, 50%);
+    @include wh(130px, 598px);
     @include flex();
     svg {
-      @include wh(47px, 47px);
-      fill: #576580;
+      fill: $text-blue;
+      @include wh(57px, 57px);
     }
-    &:hover {
-      opacity: 1;
+    @media (max-width: 1440px) {
+      width: 60px;
+      margin-right: 50px;
+    }
+    @media (max-width: 1350px) {
+      margin-right: 0;
     }
   }
+  @media (min-width: 1440px) {
+    .prev {
+      opacity: 0;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
   .tns-nav {
     @include flex();
     margin-top: 10px;
     button {
       outline: none;
       user-select: none;
-      @include wh(20px, 5px);
+      @include wh(50px, 6px);
       border: none;
       background: rgba(#34aa2f, 20%);
-      margin-right: 16px;
+      margin-right: 40px;
       &:last-child {
         margin-right: 0;
       }

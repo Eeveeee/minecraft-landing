@@ -11,3 +11,9 @@ tns({
   navPosition: 'bottom',
   controlsContainer: '.compare-slider_2-controls',
 })
+tns({
+  container: '.directions-slider',
+  items: 1,
+  navPosition: 'bottom',
+  controlsContainer: '.directions-slider-controls',
+})

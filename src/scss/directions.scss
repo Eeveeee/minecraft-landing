@@ -1,0 +1,47 @@
+.directions {
+  padding: 174px 0;
+  position: relative;
+  background: url("../img/about/background.png");
+  .background-sticks {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &__item-wrapper {
+    display: flex;
+    .direction {
+      background: $text-blue;
+      width: 459px;
+      padding: 46px 74px 0 26px;
+      &__img {
+        margin: 0;
+        width: 851px;
+        height: 596px;
+      }
+      &__title,
+      &__number,
+      &__text {
+        color: $text-white;
+      }
+      &__title,
+      &__number {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &__title {
+        padding: 10px 24px;
+        background: $another-green;
+        margin-bottom: 47px;
+      }
+      &__number {
+        margin-bottom: 30px;
+      }
+      &__text {
+        font-size: 22px;
+      }
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

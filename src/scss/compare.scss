@@ -1,7 +1,6 @@
 .compare {
   padding: 94px 0 152px 0;
   &__header {
-    margin-bottom: 82px;
     @media (max-width: 1350px) {
       margin: 20px auto;
     }
@@ -16,6 +15,9 @@
   }
   &-version {
     width: 608px;
+    @media (max-width: 609px) {
+      width: 300px;
+    }
   }
   .border-wrapper {
     padding-top: 41px;

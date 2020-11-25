@@ -1,0 +1,32 @@
+.footer {
+  text-align: center;
+  padding: 40px 0 28px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #606060;
+  div {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      color: #606060;
+    }
+  }
+  .contacts {
+    color: $text-blue;
+    font-weight: 600;
+    span {
+      margin-right: 7px;
+    }
+    a {
+      color: $text-blue;
+    }
+    img {
+      margin-right: 10px;
+    }
+  }
+  .soft-rules {
+    margin-bottom: 25px;
+  }
+}

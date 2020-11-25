@@ -1,22 +1,22 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
-<symbol id='left' width="47" height="47" viewBox="0 0 47 47" >
+<symbol id='left'  viewBox="0 0 47 47" >
   <g clip-path="url(#clip0)">
-<path d="M37.6 41.4579L19.6421 23.5L37.6 5.54214L32.058 0L8.55801 23.5L32.058 47L37.6 41.4579Z" fill="#576580"/>
+<path d="M37.6 41.4579L19.6421 23.5L37.6 5.54214L32.058 0L8.55801 23.5L32.058 47L37.6 41.4579Z" />
 </g>
 <defs>
 <clipPath id="clip0">
-<rect width="47" height="47" fill="white" transform="translate(47) rotate(90)"/>
+<rect width="47" height="47"  transform="translate(47) rotate(90)"/>
 </clipPath>
 </defs>
 </symbol>
 
-<symbol id='right' width="47" height="47" viewBox="0 0 47 47">
+<symbol id='right'  viewBox="0 0 47 47">
   <g clip-path="url(#clip0)">
-<path d="M9.40002 5.54215L27.3579 23.5L9.40002 41.4579L14.942 47L38.442 23.5L14.942 3.57245e-06L9.40002 5.54215Z" fill="#576580"/>
+<path d="M9.40002 5.54215L27.3579 23.5L9.40002 41.4579L14.942 47L38.442 23.5L14.942 3.57245e-06L9.40002 5.54215Z" />
 </g>
 <defs>
 <clipPath id="clip0">
-<rect width="47" height="47" fill="white" transform="translate(0 47) rotate(-90)"/>
+<rect width="47" height="47"  transform="translate(0 47) rotate(-90)"/>
 </clipPath>
 </defs>
 </symbol>
