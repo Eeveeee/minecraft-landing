@@ -6,6 +6,9 @@
     position: absolute;
     left: 0;
     top: 0;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   &__item-wrapper {
     display: flex;
@@ -13,6 +16,9 @@
       background: $text-blue;
       width: 459px;
       padding: 46px 74px 0 26px;
+      @media (max-width: 1350px) {
+        padding-right: 110px;
+      }
       &__img {
         margin: 0;
         width: 851px;

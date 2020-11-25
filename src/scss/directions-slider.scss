@@ -25,8 +25,7 @@
       @include wh(57px, 57px);
     }
     @media (max-width: 1440px) {
-      width: 60px;
-      margin-right: 50px;
+      width: 110px;
     }
     @media (max-width: 1350px) {
       margin-right: 0;
@@ -44,6 +43,9 @@
   .tns-nav {
     @include flex();
     margin-top: 10px;
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
     button {
       outline: none;
       user-select: none;
@@ -51,6 +53,10 @@
       border: none;
       background: rgba(#34aa2f, 20%);
       margin-right: 40px;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        @include wh(35px, 5px);
+      }
       &:last-child {
         margin-right: 0;
       }

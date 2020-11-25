@@ -11,11 +11,14 @@
   .logo-wrapper {
     position: absolute;
     left: 0;
-    top: 9px;
+    top: 50%;
+    margin-top: -32px;
     @include wh(320px, 63px);
     @media (max-width: 1200px) {
       align-self: center;
       position: unset;
+      margin-top: 0;
+      top: 0;
     }
   }
   &-wrapper {
@@ -28,7 +31,7 @@
     @include flex($justify: space-between, $wrap: wrap);
     &__item,
     &__item:hover {
-      font-weight: 600;
+      font-weight: 500;
       color: $text-nav;
     }
     &__item {
