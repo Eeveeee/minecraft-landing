@@ -6,6 +6,10 @@
     position: relative;
     @media (max-width: 1200px) {
       flex-direction: column;
+      justify-content: center;
+    }
+    @media (max-width: 1500px) {
+      justify-content: flex-end;
     }
   }
   .logo-wrapper {
@@ -14,6 +18,10 @@
     top: 50%;
     margin-top: -32px;
     @include wh(320px, 63px);
+    @media (max-width: 1500px) {
+      left: 95px;
+    }
+
     @media (max-width: 1200px) {
       align-self: center;
       position: unset;
@@ -24,6 +32,12 @@
   &-wrapper {
     @include flex($wrap: wrap);
     padding: 30px 0;
+    @media (max-width: 1500px) {
+      padding-right: 95px;
+    }
+    @media (max-width: 1024px) {
+      padding-right: 0;
+    }
   }
   &-nav {
     width: 540px;
